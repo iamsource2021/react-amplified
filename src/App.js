@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import { 
+  ActionCard,
+  Ampligram 
+} from './ui-components';
 
-import { Amplify } from 'aws-amplify';
-import awsExports from './aws-exports';
-Amplify.configure(awsExports);
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
         >
           Learn React 3
         </a>
+        
       </header>
+      <ActionCard />
+      <Ampligram />
     </div>
   );
 }
